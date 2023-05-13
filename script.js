@@ -10,12 +10,12 @@ const lookup = {
   'Y': 'L','Z': 'M', '?': '?', ',': ','
 }; 
 
-function rot13(encodedStr){
+function rot13(encodedStr){ 
    let decodedArr = []; 
-	var decodedStr = "";
+	var encodedStr = ""; 
   
-  for (var i = 0; i < str.length; i++) {
-    var charCode = str.charCodeAt(i);
+  for (var i = 0; i <encodedStr.length; i++) {
+    var charCode = encodedStr.charCodeAt(i);  
     
     if (charCode >= 65 && charCode <= 90) {  // Check if it's an uppercase letter
       charCode = ((charCode - 65 + 13) % 26) + 65;  // Apply ROT13 formula
